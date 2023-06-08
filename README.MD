@@ -13,7 +13,6 @@ SDK.
 
 - Fácil implementação em qualquer projeto
 - Value Objects para facilitar implementação
-- Mantido pela comunidade LaravelBR e pela LiuvIT.
 
 ```php
 $service = new \DanielHe4rt\Larapix\Core\LarapixService();
@@ -36,15 +35,15 @@ sugestão!
 Recomendamos você instalar o Larapix pelo [Composer](https://getcomposer.org/).
 
 ```bash
-composer require liuv/larapix
+composer require danielhe4rt/larapix
 ```
 
 ## Versões Disponíveis
 
-| Version | Status   | Packagist      | Namespace | Docs | PSR-7 | PHP Version |
-|---------|----------|----------------|-----------|------|-------|-------------|
-| 1.x     | Running  | `liuv/larapix` | `liuv`    | N/A  | No    | > = 7.0     |
-| 2.x     | Planning | `liuv/larapix` | `liuv`    | N/A  | No    | > = 8.x     |
+| Version | Status   | Packagist             | Namespace     | Docs | PSR-7 | PHP Version |
+|---------|----------|-----------------------|---------------|------|-------|-------------|
+| 1.x     | Running  | `liuv/larapix`        | `liuv`        | N/A  | No    | > = 7.0     |
+| 2.x     | Planning | `danielhe4rt/larapix` | `danielhe4rt` | N/A  | No    | > = 8.x     |
 
 
 ## Licença
