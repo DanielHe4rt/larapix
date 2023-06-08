@@ -1,9 +1,9 @@
 <?php
 
-namespace Liuv\Larapix\Payments;
+namespace DanielHe4rt\Larapix\Payments;
 
 use JsonSerializable;
-use Liuv\Larapix\Payments\Exceptions\PaymentMethodNotAcceptedException;
+use DanielHe4rt\Larapix\Payments\Exceptions\PaymentMethodNotAcceptedException;
 
 class Pix implements JsonSerializable
 {

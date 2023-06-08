@@ -1,9 +1,9 @@
 <?php
 
-namespace Liuv\Larapix\Payments\Contracts;
+namespace DanielHe4rt\Larapix\Payments\Contracts;
 
-use Liuv\Larapix\Payments\Pix;
-use Liuv\Larapix\Payments\QrCode;
+use DanielHe4rt\Larapix\Payments\Pix;
+use DanielHe4rt\Larapix\Payments\QrCode;
 
 interface PaymentsContract
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Payments\Exceptions;
+namespace DanielHe4rt\Larapix\Payments\Exceptions;
 
 class PaymentMethodNotAcceptedException extends \Exception
 {

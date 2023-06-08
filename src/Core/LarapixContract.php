@@ -1,10 +1,10 @@
 <?php
 
-namespace Liuv\Larapix\Core;
+namespace DanielHe4rt\Larapix\Core;
 
-use Liuv\Larapix\Charges\Contracts\ChargeContract;
-use Liuv\Larapix\Payments\Contracts\PaymentsContract;
-use Liuv\Larapix\Refunds\Contracts\RefundsContract;
+use DanielHe4rt\Larapix\Charges\Contracts\ChargeContract;
+use DanielHe4rt\Larapix\Payments\Contracts\PaymentsContract;
+use DanielHe4rt\Larapix\Refunds\Contracts\RefundsContract;
 
 interface LarapixContract
 {

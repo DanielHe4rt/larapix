@@ -1,8 +1,8 @@
 <?php
 
-namespace Liuv\Larapix\Webhooks\Contracts;
+namespace DanielHe4rt\Larapix\Webhooks\Contracts;
 
-use Liuv\Larapix\Webhooks\Webhook;
+use DanielHe4rt\Larapix\Webhooks\Webhook;
 
 interface WebhooksContract
 {

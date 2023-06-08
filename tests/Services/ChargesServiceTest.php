@@ -1,21 +1,21 @@
 <?php
 
-namespace Liuv\Tests\Services;
+namespace DanielHe4rt\Larapix\Tests\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Liuv\Larapix\Charges\Charge;
-use Liuv\Larapix\Charges\Contracts\ChargeContract;
-use Liuv\Larapix\Charges\Services\ChargeService;
+use DanielHe4rt\Larapix\Charges\Charge;
+use DanielHe4rt\Larapix\Charges\Contracts\ChargeContract;
+use DanielHe4rt\Larapix\Charges\Services\ChargeService;
 use PHPUnit\Framework\TestCase;
 
 class ChargesServiceTest extends TestCase
 {
     private $service;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }
@@ -72,7 +72,7 @@ class ChargesServiceTest extends TestCase
         $this->assertEquals($this->expectedCreatedChargeObject(), $actual);
     }
 
-    public function expectedFetchObject(): array
+    public static function expectedFetchObject(): array
     {
         return [
             "charge" => [
@@ -114,7 +114,7 @@ class ChargesServiceTest extends TestCase
         ];
     }
 
-    public function expectedFetchObjects(): array
+    public static function expectedFetchObjects(): array
     {
         return [
             "pageInfo" => [
@@ -162,7 +162,7 @@ class ChargesServiceTest extends TestCase
         ];
     }
 
-    public function expectedCreatedChargeObject(): array
+    public static function expectedCreatedChargeObject(): array
     {
         return [
             "correlationID" => "artur-me-da-um-aumento",

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Core\Facades;
+namespace DanielHe4rt\Larapix\Core\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Customers\Exceptions;
+namespace DanielHe4rt\Larapix\Customers\Exceptions;
 
 use Exception;
 

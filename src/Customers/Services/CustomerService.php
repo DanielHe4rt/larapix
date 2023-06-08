@@ -1,13 +1,13 @@
 <?php
 
-namespace Liuv\Larapix\Customers\Services;
+namespace DanielHe4rt\Larapix\Customers\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use Liuv\Larapix\Core\Services\BaseService;
-use Liuv\Larapix\Customers\Contracts\CustomerContract;
-use Liuv\Larapix\Customers\Customer;
-use Liuv\Larapix\Customers\Exceptions\CustomerNotFoundException;
+use DanielHe4rt\Larapix\Core\Services\BaseService;
+use DanielHe4rt\Larapix\Customers\Contracts\CustomerContract;
+use DanielHe4rt\Larapix\Customers\Customer;
+use DanielHe4rt\Larapix\Customers\Exceptions\CustomerNotFoundException;
 
 class CustomerService extends BaseService implements CustomerContract
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Core\Services;
+namespace DanielHe4rt\Larapix\Core\Services;
 
 abstract class BaseService
 {

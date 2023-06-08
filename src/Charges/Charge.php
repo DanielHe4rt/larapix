@@ -1,8 +1,8 @@
 <?php
 
-namespace Liuv\Larapix\Charges;
+namespace DanielHe4rt\Larapix\Charges;
 
-use Liuv\Larapix\Customers\Customer;
+use DanielHe4rt\Larapix\Customers\Customer;
 
 class Charge implements \JsonSerializable
 {

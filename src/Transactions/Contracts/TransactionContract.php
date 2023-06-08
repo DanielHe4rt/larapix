@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Transaction\Contracts;
+namespace DanielHe4rt\Larapix\Transactions\Contracts;
 
 interface TransactionContract
 {

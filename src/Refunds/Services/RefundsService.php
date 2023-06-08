@@ -1,11 +1,11 @@
 <?php
 
-namespace Liuv\Larapix\Refunds\Services;
+namespace DanielHe4rt\Larapix\Refunds\Services;
 
 use GuzzleHttp\Client;
-use Liuv\Larapix\Core\Services\BaseService;
-use Liuv\Larapix\Refunds\Contracts\RefundsContract;
-use Liuv\Larapix\Refunds\Refund;
+use DanielHe4rt\Larapix\Core\Services\BaseService;
+use DanielHe4rt\Larapix\Refunds\Contracts\RefundsContract;
+use DanielHe4rt\Larapix\Refunds\Refund;
 
 class RefundsService extends BaseService implements RefundsContract
 {

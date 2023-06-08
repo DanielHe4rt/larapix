@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Webhooks;
+namespace DanielHe4rt\Larapix\Webhooks;
 
 use JsonSerializable;
 use PharIo\Manifest\InvalidUrlException;

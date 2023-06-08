@@ -1,12 +1,12 @@
 <?php
 
-namespace Liuv\Tests\Services;
+namespace DanielHe4rt\Larapix\Tests\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Liuv\Larapix\Transaction\Services\TransactionsService;
+use DanielHe4rt\Larapix\Transactions\Services\TransactionsService;
 use PHPUnit\Framework\TestCase;
 
 class TransactionsServiceTest extends TestCase
@@ -45,7 +45,7 @@ class TransactionsServiceTest extends TestCase
         $this->assertEquals($this->expectedFetchObjects(), $actual);
     }
 
-    private function expectedFetchObject(): array
+    private static function expectedFetchObject(): array
     {
         return [
             "transaction" => [
@@ -86,7 +86,7 @@ class TransactionsServiceTest extends TestCase
         ];
     }
 
-    private function expectedFetchObjects(): array
+    private static function expectedFetchObjects(): array
     {
         return [
             "pageInfo" => [

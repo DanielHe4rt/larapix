@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Refunds;
+namespace DanielHe4rt\Larapix\Refunds;
 
 class Refund implements \JsonSerializable
 {

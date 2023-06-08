@@ -1,11 +1,11 @@
 <?php
 
-namespace Liuv\Larapix\Webhooks\Services;
+namespace DanielHe4rt\Larapix\Webhooks\Services;
 
 use GuzzleHttp\Client;
-use Liuv\Larapix\Core\Services\BaseService;
-use Liuv\Larapix\Webhooks\Contracts\WebhooksContract;
-use Liuv\Larapix\Webhooks\Webhook;
+use DanielHe4rt\Larapix\Core\Services\BaseService;
+use DanielHe4rt\Larapix\Webhooks\Contracts\WebhooksContract;
+use DanielHe4rt\Larapix\Webhooks\Webhook;
 
 class WebhooksService extends BaseService implements WebhooksContract
 {

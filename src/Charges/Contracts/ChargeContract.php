@@ -1,8 +1,8 @@
 <?php
 
-namespace Liuv\Larapix\Charges\Contracts;
+namespace DanielHe4rt\Larapix\Charges\Contracts;
 
-use Liuv\Larapix\Charges\Charge;
+use DanielHe4rt\Larapix\Charges\Charge;
 
 interface ChargeContract
 {

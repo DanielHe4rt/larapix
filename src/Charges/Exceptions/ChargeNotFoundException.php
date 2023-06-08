@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Charges\Exceptions;
+namespace DanielHe4rt\Larapix\Charges\Exceptions;
 
 class ChargeNotFoundException extends \Exception
 {

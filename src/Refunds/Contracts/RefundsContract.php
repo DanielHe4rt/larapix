@@ -1,8 +1,8 @@
 <?php
 
-namespace Liuv\Larapix\Refunds\Contracts;
+namespace DanielHe4rt\Larapix\Refunds\Contracts;
 
-use Liuv\Larapix\Refunds\Refund;
+use DanielHe4rt\Larapix\Refunds\Refund;
 
 interface RefundsContract
 {

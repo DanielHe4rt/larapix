@@ -1,13 +1,13 @@
 <?php
 
-namespace Liuv\Tests\Services;
+namespace DanielHe4rt\Larapix\Tests\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Liuv\Larapix\Refunds\Contracts\RefundsContract;
-use Liuv\Larapix\Refunds\Services\RefundsService;
+use DanielHe4rt\Larapix\Refunds\Contracts\RefundsContract;
+use DanielHe4rt\Larapix\Refunds\Services\RefundsService;
 use PHPUnit\Framework\TestCase;
 
 class RefundServiceTest extends TestCase
@@ -69,7 +69,7 @@ class RefundServiceTest extends TestCase
         $this->assertEquals($this->expectedRefundObject(), $actual);
     }
 
-    public function expectedFetchObject()
+    public static function expectedFetchObject()
     {
         return  [
             "refund" => [
@@ -80,7 +80,7 @@ class RefundServiceTest extends TestCase
             ]
         ];
     }
-    public function expectedRefundObject()
+    public static function expectedRefundObject()
     {
         return  [
             "refund" => [
@@ -92,7 +92,7 @@ class RefundServiceTest extends TestCase
         ];
     }
 
-    public function expectedFetchObjects()
+    public static function expectedFetchObjects()
     {
         return [
             "pageInfo" => [

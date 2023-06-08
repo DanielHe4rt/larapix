@@ -1,13 +1,13 @@
 <?php
 
-namespace Liuv\Tests\Services;
+namespace DanielHe4rt\Larapix\Tests\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Liuv\Larapix\Customers\Customer;
-use Liuv\Larapix\Customers\Services\CustomerService;
+use DanielHe4rt\Larapix\Customers\Customer;
+use DanielHe4rt\Larapix\Customers\Services\CustomerService;
 use PHPUnit\Framework\TestCase;
 
 class CustomersServiceTest extends TestCase
@@ -64,7 +64,7 @@ class CustomersServiceTest extends TestCase
         $this->assertEquals($this->expectedCreatedObject(), $actual);
     }
 
-    private function expectedFetchObject(): array
+    private static function expectedFetchObject(): array
     {
         return [
             "customer" => [
@@ -80,7 +80,7 @@ class CustomersServiceTest extends TestCase
         ];
     }
 
-    private function expectedFetchObjects(): array
+    private static function expectedFetchObjects(): array
     {
         return [
             "pageInfo" => [
@@ -104,7 +104,7 @@ class CustomersServiceTest extends TestCase
         ];
     }
 
-    private function expectedCreatedObject(): array
+    private static function expectedCreatedObject(): array
     {
         return [
             "customer" => [

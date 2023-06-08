@@ -1,12 +1,12 @@
 <?php
 
-namespace Liuv\Larapix\Payments\Services;
+namespace DanielHe4rt\Larapix\Payments\Services;
 
 use GuzzleHttp\Client;
-use Liuv\Larapix\Core\Services\BaseService;
-use Liuv\Larapix\Payments\Contracts\PaymentsContract;
-use Liuv\Larapix\Payments\Pix;
-use Liuv\Larapix\Payments\QrCode;
+use DanielHe4rt\Larapix\Core\Services\BaseService;
+use DanielHe4rt\Larapix\Payments\Contracts\PaymentsContract;
+use DanielHe4rt\Larapix\Payments\Pix;
+use DanielHe4rt\Larapix\Payments\QrCode;
 
 class PaymentsService extends BaseService implements PaymentsContract
 {

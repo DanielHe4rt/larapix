@@ -1,13 +1,13 @@
 <?php
 
-namespace Liuv\Tests\Services;
+namespace DanielHe4rt\Larapix\Tests\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Liuv\Larapix\Webhooks\Services\WebhooksService;
-use Liuv\Larapix\Webhooks\Webhook;
+use DanielHe4rt\Larapix\Webhooks\Services\WebhooksService;
+use DanielHe4rt\Larapix\Webhooks\Webhook;
 use PHPUnit\Framework\TestCase;
 
 class WebhooksServiceTest extends TestCase
@@ -67,7 +67,7 @@ class WebhooksServiceTest extends TestCase
         $this->assertEquals($expected, $actual);
     }
 
-    private function expectedCreatedWebhookObject(): array
+    private static function expectedCreatedWebhookObject(): array
     {
         return [
             "webhook" => [
@@ -82,7 +82,7 @@ class WebhooksServiceTest extends TestCase
         ];
     }
 
-    private function expectedPaginatedWebhookObjects(): array
+    private static function expectedPaginatedWebhookObjects(): array
     {
         return [
             "pageInfo" => [

@@ -1,15 +1,15 @@
 <?php
 
-namespace Liuv\Tests\Services;
+namespace DanielHe4rt\Larapix\Tests\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Liuv\Larapix\Payments\Contracts\PaymentsContract;
-use Liuv\Larapix\Payments\Pix;
-use Liuv\Larapix\Payments\QrCode;
-use Liuv\Larapix\Payments\Services\PaymentsService;
+use DanielHe4rt\Larapix\Payments\Contracts\PaymentsContract;
+use DanielHe4rt\Larapix\Payments\Pix;
+use DanielHe4rt\Larapix\Payments\QrCode;
+use DanielHe4rt\Larapix\Payments\Services\PaymentsService;
 use PHPUnit\Framework\TestCase;
 
 class PaymentsServiceTest extends TestCase
@@ -79,7 +79,7 @@ class PaymentsServiceTest extends TestCase
         $this->assertEquals($this->expectedPaymentConfirmationObject(), $actual);
     }
 
-    public function expectedPaymentWithPixObject(): array
+    public static function expectedPaymentWithPixObject(): array
     {
         return [
             "payment" => [
@@ -111,7 +111,7 @@ class PaymentsServiceTest extends TestCase
         ];
     }
 
-    public function expectedPaymentWithQrCodeObject(): array
+    public static function expectedPaymentWithQrCodeObject(): array
     {
         return [
             "payment" => [
@@ -143,7 +143,7 @@ class PaymentsServiceTest extends TestCase
         ];
     }
 
-    public function expectedPaymentConfirmationObject(): array
+    public static function expectedPaymentConfirmationObject(): array
     {
         return [
             "payment" => [

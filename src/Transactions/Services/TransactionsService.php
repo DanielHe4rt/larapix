@@ -1,10 +1,10 @@
 <?php
 
-namespace Liuv\Larapix\Transaction\Services;
+namespace DanielHe4rt\Larapix\Transactions\Services;
 
 use GuzzleHttp\Client;
-use Liuv\Larapix\Core\Services\BaseService;
-use Liuv\Larapix\Transaction\Contracts\TransactionContract;
+use DanielHe4rt\Larapix\Core\Services\BaseService;
+use DanielHe4rt\Larapix\Transactions\Contracts\TransactionContract;
 
 class TransactionsService extends BaseService implements TransactionContract
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Liuv\Larapix\Charges\Services;
+namespace DanielHe4rt\Larapix\Charges\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use Liuv\Larapix\Charges\Charge;
-use Liuv\Larapix\Charges\Contracts\ChargeContract;
-use Liuv\Larapix\Charges\Exceptions\ChargeAlreadyCreatedException;
-use Liuv\Larapix\Charges\Exceptions\ChargeNotFoundException;
-use Liuv\Larapix\Core\Services\BaseService;
+use DanielHe4rt\Larapix\Charges\Charge;
+use DanielHe4rt\Larapix\Charges\Contracts\ChargeContract;
+use DanielHe4rt\Larapix\Charges\Exceptions\ChargeAlreadyCreatedException;
+use DanielHe4rt\Larapix\Charges\Exceptions\ChargeNotFoundException;
+use DanielHe4rt\Larapix\Core\Services\BaseService;
 
 class ChargeService extends BaseService implements ChargeContract
 {

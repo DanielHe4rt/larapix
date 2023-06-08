@@ -1,8 +1,8 @@
 <?php
 
-namespace Liuv\Larapix\Customers\Contracts;
+namespace DanielHe4rt\Larapix\Customers\Contracts;
 
-use Liuv\Larapix\Customers\Customer;
+use DanielHe4rt\Larapix\Customers\Customer;
 
 interface CustomerContract
 {

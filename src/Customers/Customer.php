@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Customers;
+namespace DanielHe4rt\Larapix\Customers;
 
 class Customer implements \JsonSerializable
 {

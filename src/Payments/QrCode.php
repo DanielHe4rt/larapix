@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuv\Larapix\Payments;
+namespace DanielHe4rt\Larapix\Payments;
 
 use JsonSerializable;
 

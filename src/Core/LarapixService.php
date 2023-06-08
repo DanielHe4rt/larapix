@@ -1,20 +1,20 @@
 <?php
 
-namespace Liuv\Larapix\Core;
+namespace DanielHe4rt\Larapix\Core;
 
 use GuzzleHttp\Client;
-use Liuv\Larapix\Charges\Contracts\ChargeContract;
-use Liuv\Larapix\Charges\Services\ChargeService;
-use Liuv\Larapix\Customers\Contracts\CustomerContract;
-use Liuv\Larapix\Customers\Services\CustomerService;
-use Liuv\Larapix\Payments\Contracts\PaymentsContract;
-use Liuv\Larapix\Payments\Services\PaymentsService;
-use Liuv\Larapix\Refunds\Contracts\RefundsContract;
-use Liuv\Larapix\Refunds\Services\RefundsService;
-use Liuv\Larapix\Transaction\Contracts\TransactionContract;
-use Liuv\Larapix\Transaction\Services\TransactionsService;
-use Liuv\Larapix\Webhooks\Contracts\WebhooksContract;
-use Liuv\Larapix\Webhooks\Services\WebhooksService;
+use DanielHe4rt\Larapix\Charges\Contracts\ChargeContract;
+use DanielHe4rt\Larapix\Charges\Services\ChargeService;
+use DanielHe4rt\Larapix\Customers\Contracts\CustomerContract;
+use DanielHe4rt\Larapix\Customers\Services\CustomerService;
+use DanielHe4rt\Larapix\Payments\Contracts\PaymentsContract;
+use DanielHe4rt\Larapix\Payments\Services\PaymentsService;
+use DanielHe4rt\Larapix\Refunds\Contracts\RefundsContract;
+use DanielHe4rt\Larapix\Refunds\Services\RefundsService;
+use DanielHe4rt\Larapix\Transactions\Contracts\TransactionContract;
+use DanielHe4rt\Larapix\Transactions\Services\TransactionsService;
+use DanielHe4rt\Larapix\Webhooks\Contracts\WebhooksContract;
+use DanielHe4rt\Larapix\Webhooks\Services\WebhooksService;
 
 class LarapixService implements LarapixContract
 {

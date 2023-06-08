@@ -1,24 +1,23 @@
 <?php
 
-namespace Liuv\Tests;
+namespace DanielHe4rt\Larapix\Tests;
 
 use GuzzleHttp\Client;
-use GuzzleHttp\ClientInterface;
-use Liuv\Larapix\Charges\Contracts\ChargeContract;
-use Liuv\Larapix\Core\LarapixContract;
-use Liuv\Larapix\Core\LarapixService;
-use Liuv\Larapix\Customers\Contracts\CustomerContract;
-use Liuv\Larapix\Payments\Contracts\PaymentsContract;
-use Liuv\Larapix\Refunds\Contracts\RefundsContract;
-use Liuv\Larapix\Transaction\Contracts\TransactionContract;
-use Liuv\Larapix\Webhooks\Contracts\WebhooksContract;
+use DanielHe4rt\Larapix\Charges\Contracts\ChargeContract;
+use DanielHe4rt\Larapix\Core\LarapixContract;
+use DanielHe4rt\Larapix\Core\LarapixService;
+use DanielHe4rt\Larapix\Customers\Contracts\CustomerContract;
+use DanielHe4rt\Larapix\Payments\Contracts\PaymentsContract;
+use DanielHe4rt\Larapix\Refunds\Contracts\RefundsContract;
+use DanielHe4rt\Larapix\Transactions\Contracts\TransactionContract;
+use DanielHe4rt\Larapix\Webhooks\Contracts\WebhooksContract;
 use PHPUnit\Framework\TestCase;
 
 class LarapixServiceTest extends TestCase
 {
     private $service;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->service = new LarapixService(new Client());
