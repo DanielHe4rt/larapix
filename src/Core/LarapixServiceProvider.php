@@ -4,8 +4,6 @@ namespace DanielHe4rt\Larapix\Core;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
-use function DanielHe4rt\Larapix\config;
-use function DanielHe4rt\Larapix\config_path;
 
 class LarapixServiceProvider extends ServiceProvider
 {
