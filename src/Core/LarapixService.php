@@ -2,6 +2,8 @@
 
 namespace DanielHe4rt\Larapix\Core;
 
+use DanielHe4rt\Larapix\QrCode\StaticQrCodeContract;
+use DanielHe4rt\Larapix\QrCode\StaticQrCodeService;
 use GuzzleHttp\Client;
 use DanielHe4rt\Larapix\Charges\Contracts\ChargeContract;
 use DanielHe4rt\Larapix\Charges\Services\ChargeService;
@@ -51,5 +53,10 @@ class LarapixService implements LarapixContract
     public function customers(): CustomerContract
     {
         return new CustomerService($this->client);
+    }
+
+    public function qrCode(): StaticQrCodeContract
+    {
+        return new StaticQrCodeService($this->client);
     }
 }

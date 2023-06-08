@@ -2,7 +2,7 @@
 
 namespace DanielHe4rt\Larapix\QrCode;
 
-class StaticQrCodeContract
+interface StaticQrCodeContract
 {
-
+    public function generate(StaticQrCode $qrCode): array;
 }
