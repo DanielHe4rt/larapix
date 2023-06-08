@@ -11,14 +11,9 @@ use DanielHe4rt\Larapix\Payments\QrCode;
 class PaymentsService extends BaseService implements PaymentsContract
 {
     const BASE_API = 'https://api.openpix.com.br/api/openpix/v1/pay';
-    /**
-     * @var Client
-     */
-    private $client;
 
-    public function __construct(Client $client)
+    public function __construct(private readonly Client $client)
     {
-        $this->client = $client;
     }
 
     public function initPixPayment(Pix $pix): array

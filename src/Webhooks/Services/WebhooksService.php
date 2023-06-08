@@ -10,14 +10,9 @@ use DanielHe4rt\Larapix\Webhooks\Webhook;
 class WebhooksService extends BaseService implements WebhooksContract
 {
     const BASE_API = 'https://api.openpix.com.br/api/openpix/v1';
-    /**
-     * @var Client
-     */
-    private $client;
 
-    public function __construct(Client $client)
+    public function __construct(private readonly Client $client)
     {
-        $this->client = $client;
     }
 
     public function create(Webhook $webhook): array

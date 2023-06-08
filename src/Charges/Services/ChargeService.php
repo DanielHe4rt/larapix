@@ -13,14 +13,9 @@ use DanielHe4rt\Larapix\Core\Services\BaseService;
 class ChargeService extends BaseService implements ChargeContract
 {
     const BASE_API = 'https://api.openpix.com.br/api/openpix/v1';
-    /**
-     * @var Client
-     */
-    private $client;
 
-    public function __construct(Client $client)
+    public function __construct(private readonly Client $client)
     {
-        $this->client = $client;
     }
 
 

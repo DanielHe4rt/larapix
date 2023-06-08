@@ -11,11 +11,8 @@ class RefundsService extends BaseService implements RefundsContract
 {
     const BASE_API = 'https://api.openpix.com.br/api/openpix/v1';
 
-    private $client;
-
-    public function __construct(Client $client)
+    public function __construct(private readonly Client $client)
     {
-        $this->client = $client;
     }
 
 

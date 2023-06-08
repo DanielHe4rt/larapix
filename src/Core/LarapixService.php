@@ -18,14 +18,9 @@ use DanielHe4rt\Larapix\Webhooks\Services\WebhooksService;
 
 class LarapixService implements LarapixContract
 {
-    /**
-     * @var Client
-     */
-    private $client;
 
-    public function __construct(Client $client)
+    public function __construct(private readonly Client $client)
     {
-        $this->client = $client;
     }
 
     public function charges(): ChargeContract

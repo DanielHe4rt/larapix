@@ -9,14 +9,9 @@ use DanielHe4rt\Larapix\Transactions\Contracts\TransactionContract;
 class TransactionsService extends BaseService implements TransactionContract
 {
     const BASE_API = 'https://api.openpix.com.br/api/openpix/v1';
-    /**
-     * @var Client
-     */
-    private $client;
 
-    public function __construct(Client $client)
+    public function __construct(private readonly Client $client)
     {
-        $this->client = $client;
     }
 
     public function findById(string $transactionId): array
